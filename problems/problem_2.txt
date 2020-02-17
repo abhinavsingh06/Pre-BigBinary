@@ -1,0 +1,3 @@
+Q. If you were working on a React application that was rendering a page very slowly, how would you go about investigating and fixing the issue?
+
+A. React render is a memory consuming process.
