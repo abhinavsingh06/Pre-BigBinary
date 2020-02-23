@@ -9,3 +9,6 @@ React has the ability to build and compare virtual DOM's. The structure of React
 
 During the initial render process, React builds a DOM tree with its siblings. What we expect from React is that it should only re-render the components that are directly affected by the change and skip the diff process for rest of the components. But, react ends up diffing and rendering all the nodes resultinfg in wasted  time and computation resources. To put this into action we should put optimization in such a way that allows configuring each component to re-render and diff only when it is needed and thus preventing the cpu cycle wastage.
 
+One of the ways to prevent slow render is moving the state as close to where you need it as possible. One should not have a lot of unnecessary state in parent components.
+
+Following all steps to prevent slow rendering cannot precisely ensure the solution because of the nature of working of React. 
