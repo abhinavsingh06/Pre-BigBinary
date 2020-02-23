@@ -1,3 +1,11 @@
-Q. If you were working on a React application that was rendering a page very slowly, how would you go about investigating and fixing the issue?
+Q2. If you were working on a React application that was rendering a page very slowly, how would you go about investigating and fixing the issue?
 
-A. React render is a memory consuming process.
+A. React render is a memory consuming process. While working on a React application, one may come along with an issue such as slow rendering of the application. Usually it is difficult to concretely find the problem causing the issue, but one may go about understanding the workflow and apply changes that may help to solve the issue.
+
+The solution to the problem is usually within the problem itself. Before attempting towards the problem, it is best to understand the possible
+reasons that could be causing the slow render. 
+
+React has the ability to build and compare virtual DOM's. The structure of React model is that it has a root component and is composed of many sibling components using tree data structure model. In React UI is a function of data. Users can interact with the data and cause the UI to change, which means data is everything that defines the state of the web application. 
+
+During the initial render process, React builds a DOM tree with its siblings. What we expect from React is that it should only re-render the components that are directly affected by the change and skip the diff process for rest of the components. But, react ends up diffing and rendering all the nodes resultinfg in wasted  time and computation resources. To put this into action we should put optimization in such a way that allows configuring each component to re-render and diff only when it is needed and thus preventing the cpu cycle wastage.
+
