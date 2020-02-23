@@ -29,7 +29,7 @@ if (process.env.NODE_ENV === 'development') {
     require('webpack-dev-middleware')(compiler, {
       noInfo: true,
       publicPath: webpackConfig.output.publicPath,
-    }),
+    })
   );
 
   app.use(require('webpack-hot-middleware')(compiler));
@@ -43,8 +43,11 @@ mongoose.connect(
       console.log(err);
     } else {
       console.log('connected to DB');
+      try {
+        require('./utils/seed');
+      } catch (error) {}
     }
-  },
+  }
 );
 
 // mongoose.set('useCreateIndex', true);
