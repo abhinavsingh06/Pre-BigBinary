@@ -1,0 +1,10 @@
+@import './css-reset';
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap');
+@import './header';
+@import './banner';
+
+body {
+    width: 100%;
+    font-family: 'Roboto', ;
+    font-size: 16px;
+}

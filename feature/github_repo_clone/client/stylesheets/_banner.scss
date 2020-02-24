@@ -1,0 +1,22 @@
+.banner {
+    background-color: #FAFBFC;
+    height: 20vh;
+    border-bottom: 0.2px solid rgb(214, 207, 207);
+}
+
+.banner_container {
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    margin: 0 auto;
+
+}
+
+.banner_content {
+    height: 15vh;
+}
+
+.banner_button {
+    padding: 1rem 2.5rem;
+    font-size: 1rem;
+}
