@@ -5,7 +5,7 @@ export default function Filter() {
     <>
       <div className='filter_container'>
         <div className='type_filter_container'>
-          <label for='type'>Type:</label>
+          <label htmlFor='type'>Type:</label>
           <select id='type'>
             <option value='All'>All</option>
             <option value='saab'>Saab</option>
@@ -14,7 +14,7 @@ export default function Filter() {
           </select>
         </div>
         <div className='language_filter_container'>
-          <label for='language'>Language:</label>
+          <label htmlFor='language'>Language:</label>
           <select id='language'>
             <option value='All'>All</option>
             <option value='saab'>Saab</option>
