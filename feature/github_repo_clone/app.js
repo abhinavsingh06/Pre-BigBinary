@@ -36,7 +36,7 @@ if (process.env.NODE_ENV === 'development') {
 }
 
 mongoose.connect(
-  'mongodb://localhost/myapp',
+  'mongodb://localhost/feature',
   { useUnifiedTopology: true, useNewUrlParser: true },
   function(err) {
     if (err) {
