@@ -4,23 +4,23 @@ const Schema = mongoose.Schema;
 const repoSchema = new Schema({
   name: { type: String, required: true },
   repoLanguage: { type: String, required: true },
+  repoType: { type: String, required: true },
   language: {
     type: String,
     required: true,
-    enum: ['All', 'CSS', 'Elixir', 'HTML', 'JavaScript', 'Objective-C'],
+    enum: ['css', 'elixir', 'html', 'javascript', 'objective-c'],
   },
   type: {
     type: String,
     required: true,
     enum: [
-      'All',
-      'Public',
-      'Private',
-      'Internal',
-      'Sources',
-      'Forks',
-      'Archived',
-      'Mirrors',
+      'public',
+      'private',
+      'internal',
+      'sources',
+      'forks',
+      'archived',
+      'mirrors',
     ],
   },
 });
