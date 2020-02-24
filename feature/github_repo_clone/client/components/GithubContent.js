@@ -5,9 +5,11 @@ import Filter from './Filter';
 export default function GithubContent() {
   return (
     <>
-      <div className='github_content_container'>
-        <Search />
-        <Filter />
+      <div className='github_content'>
+        <div className='github_content_container'>
+          <Search />
+          <Filter />
+        </div>
       </div>
     </>
   );
