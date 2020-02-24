@@ -1,6 +1,15 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 
 export default function Filter() {
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    axios.get('http://localhost:3000/api/v1/').then((res) => {
+      setData(res.data.allRepos);
+    });
+  }, []);
+
   return (
     <>
       <div className='filter_container'>
