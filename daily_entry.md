@@ -17,3 +17,9 @@
 - schema update and fix
 - add search functionality
 - work on filter
+
+## Day 4 : 25 Feb, 2020 -
+
+- add filter funtionality
+-
+-
