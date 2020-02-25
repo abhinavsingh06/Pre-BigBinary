@@ -21,5 +21,6 @@
 ## Day 4 : 25 Feb, 2020 -
 
 - add filter funtionality
--
--
+- completed feature
+- problem 1 solved
+- problem 3 answered
