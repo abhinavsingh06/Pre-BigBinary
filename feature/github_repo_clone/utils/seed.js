@@ -1,7 +1,6 @@
 const Repo = require('../model/Repo');
 
 Repo.find((err, repos) => {
-  console.log(repos);
   if (repos.length === 0) {
     const reposToCreate = [
       {
