@@ -15,7 +15,12 @@ export default function GithubContent() {
         </div>
       </div>
       <div className='repo_container'>
-        <Repos filter={filterData} searchData={searchData} />
+        <Repos
+          filter={filterData}
+          searchData={searchData}
+          setSearchData={setSearchData}
+          setFilterData={setFilterData}
+        />
       </div>
     </>
   );

@@ -20,3 +20,24 @@
     margin-bottom: 0.6rem;
     border-bottom: 0.2px solid rgb(214, 207, 207);
 }
+
+.info_container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.count_info {
+    font-size: 0.9rem;
+    font-weight: 700;
+
+    span {
+        font-weight: 400;
+    }
+}
+
+.clear_btn {
+    padding: 0.5rem 1rem;
+    background-color: slategrey;
+    cursor: pointer;
+    border: 0.8px solid rgb(214, 207, 207);
+}
