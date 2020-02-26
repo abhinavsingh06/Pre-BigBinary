@@ -2,7 +2,12 @@ import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import axios from 'axios';
 
-export default function Repos({ searchData, filter }) {
+export default function Repos({
+  searchData,
+  filter,
+  setSearchData,
+  setFilterData,
+}) {
   const [data, setData] = useState([]);
   const [search, setSearch] = useState([]);
 
@@ -35,6 +40,26 @@ export default function Repos({ searchData, filter }) {
   return (
     <>
       <div>
+        <div className='info_container'>
+          {(searchData || filter[0] !== 'all' || filter[1] !== 'all') && (
+            <div className='count_info'>
+              {search.length} <span>results for repositories matching</span>{' '}
+              {searchData}
+            </div>
+          )}
+
+          {(searchData || filter[0] !== 'all' || filter[1] !== 'all') && (
+            <button
+              className='clear_btn'
+              type='button'
+              onClick={() => {
+                setSearchData('');
+                setFilterData(['all', 'all']);
+              }}>
+              X Clear filter
+            </button>
+          )}
+        </div>
         {search.map((item) => {
           return (
             <div className='repo' key={item._id}>
@@ -51,4 +76,5 @@ export default function Repos({ searchData, filter }) {
 Repos.propsTypes = {
   searchData: PropTypes.string,
   filter: PropTypes.array,
+  setSearchData: PropTypes.func,
 };

@@ -28,6 +28,7 @@ export default function Filter({ filter, setFilter }) {
           <label htmlFor='type'>Type:</label>
           <select
             onChange={({ target: { value } }) => setFilter([value, filter[1]])}
+            value={filter[0]}
             id='type'>
             {type.map((item) => {
               return (
@@ -41,6 +42,7 @@ export default function Filter({ filter, setFilter }) {
         <div className='language_filter_container'>
           <label htmlFor='language'>Language:</label>
           <select
+            value={filter[1]}
             onChange={({ target: { value } }) => setFilter([filter[0], value])}
             id='language'>
             {language.map((item) => {

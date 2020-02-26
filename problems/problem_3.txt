@@ -1,0 +1,29 @@
+Q3. I want to refactor a legacy system. You want to rewrite it from scratch. Argument. Then, switch our roles.
+
+A. 
+    Argument for I want to refactor a legacy system - 
+    • Refactoring a legacy system requires a developer who is skilled in understanding the written code. 
+    • One can replace the old pieces of code with new ones.
+    • Saves time that writing from scratch although it depends on situations.
+    • Easy to understand and manage.
+    
+    Argumnet for writing the code from scratch - 
+    • The code base is yours so it is easy to manage from developer’s side.
+    • One can implement a new innovation and style.
+    • Code simplicity is offered.
+    • Relatively simple.
+
+    Argument against I want to refactor a legacy system -
+    • refactoring is similar to untangling which is difficult.
+    • Refactoring may sometimes make the code more complex and less extensible.
+    • May cause chaos after every change.
+    • No guarentee for a better code
+
+    Argument against writing the code from scratch -
+    • The code may be poorly wriiten
+    • Sometimes could not meet the standards of the organization.
+    • Sometimes not possible to adapt the code to new platform
+    • No possible way of finding out how the previous code works.
+      
+Although this is not a tug of war between the two arguments. One has to act differently depending on the situation.
+   
